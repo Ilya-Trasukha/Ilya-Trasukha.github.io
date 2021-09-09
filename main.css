@@ -3,23 +3,24 @@ body{
   font-size:16px;
   font-family: 'Roboto', sans-serif;
 }
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header{
   width: 100%;
-  background-color: rgba(90, 99, 99, 0.849);
-  color: rgb(255, 255, 255);
-  padding: 15px;
-}
+  color:white;
+  }
 header a{
-  color:aqua;
+  color:grey;
 }
-header .top{
+header .top .wrapper{
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .info{
-  display: flex;
-}
+  background-color:black;
+  }
 .menu{
   width: 100%;
 }
@@ -30,7 +31,6 @@ header .info{
   margin: 0;
   padding: 0;
 }
-
 .menu ul li{
   margin-left: 15px;
 }
@@ -38,5 +38,32 @@ header .info{
   margin-left: 0px;
 }
 .menu ul li a{
-  text-decoration: none
+   text-decoration: none;
+   color: black;
+   display: block;
+   transition: 0.3s ease-in all;
+}
+.menu ul li a:hover{
+  color: red;
+  transform: scale(1.1);
+}
+
+
+footer{
+  width: 100%;
+  background-color: rgba(90, 99, 99, 0.849);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .top{
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .info__phone{
+  text-align :center;
+  font-size:14px
 }
