@@ -21,6 +21,18 @@ header .top .wrapper{
   align-items: center;
   background-color:black;
   }
+header .info__phone{
+  font-size: 14px;
+}
+input{
+  width: 600px;
+  background-color: rgb(189, 189, 189);
+  border-radius: 4px;
+  padding: 4px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
 .menu{
   width: 100%;
 }
@@ -32,7 +44,7 @@ header .top .wrapper{
   padding: 0;
 }
 .menu ul li{
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .menu ul li:first-child{
   margin-left: 0px;
@@ -45,25 +57,56 @@ header .top .wrapper{
 }
 .menu ul li a:hover{
   color: red;
-  transform: scale(1.1);
 }
 
+
+.title__sidebar{
+  color: white;
+  background-color: black;
+  padding: 5px;
+  margin-top: 20px;
+  width: 210px;
+}
+.menu__sidebar ul{
+  list-style: none;
+  margin: 0px;
+  padding: 15px;
+  height: 330px;
+  width: 210px;
+  border: 1px solid gray;
+}
+.menu__sidebar ul li{
+  padding-top: 10px;
+}
+.menu__sidebar ul li a{
+  text-decoration: none;
+  color: black;
+}
 
 footer{
   width: 100%;
-  background-color: rgba(90, 99, 99, 0.849);
-  color: rgb(255, 255, 255);
-  padding: 15px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  color: white;
+  margin: 10px;
 }
-footer .top{
-  display: block;
+footer a{
+  color: grey;
+}
+footer .down .wrapper{
+  padding: 10px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color:grey;
+}
+footer .name {
+  width: 300px;
 }
 footer .info__phone{
-  text-align :center;
-  font-size:14px
+  width: 100%;
+  background-color: black;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
 }
