@@ -12,6 +12,9 @@ header{
   color:white;
   }
 header a{
+  color:white;
+}
+header a:hover{
   color:grey;
 }
 header .top .wrapper{
@@ -20,7 +23,7 @@ header .top .wrapper{
   justify-content: space-between;
   align-items: center;
   background-color:black;
-  }
+}
 header .info__phone{
   font-size: 14px;
 }
@@ -39,12 +42,12 @@ input{
 .menu ul{
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .menu ul li{
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .menu ul li:first-child{
   margin-left: 0px;
@@ -53,34 +56,58 @@ input{
    text-decoration: none;
    color: black;
    display: block;
-   transition: 0.3s ease-in all;
+   transition: 0.2s ease-in all;
 }
 .menu ul li a:hover{
-  color: red;
+  text-decoration: none;
+  transform: scale(1.05);
+  color: grey;
 }
 
-
-.title__sidebar{
-  color: white;
-  background-color: black;
-  padding: 5px;
-  margin-top: 20px;
-  width: 210px;
-}
-.menu__sidebar ul{
+aside ul {
   list-style: none;
-  margin: 0px;
-  padding: 15px;
-  height: 330px;
-  width: 210px;
-  border: 1px solid gray;
+  padding-left: 5px;
+  width: 250px;
+  border: 1px solid #707070;
+  background-color: white;
 }
-.menu__sidebar ul li{
-  padding-top: 10px;
-}
-.menu__sidebar ul li a{
+
+aside a {
   text-decoration: none;
   color: black;
+}
+
+aside a:hover {
+  background-color: rgb(230, 223, 223);
+}
+
+aside ul li a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease-in all;
+  color: black;
+}
+
+aside ul li a:hover {
+  text-decoration: none;
+  transform: scale(1.01);
+}
+
+aside ul ul {
+  display: none;
+  position: relative;
+  top: 100%;
+}
+
+aside ul li:hover>ul {
+  display: inherit;
+}
+
+aside ul ul li {
+  min-width: 170px;
+  display: list-item;
+  position: relative;
+  background-color: rgb(230, 223, 223);
 }
 
 footer{
@@ -91,7 +118,10 @@ footer{
   margin: 10px;
 }
 footer a{
-  color: grey;
+  color: white;
+}
+footer .name a:hover{
+  color:black;
 }
 footer .down .wrapper{
   padding: 10px;
@@ -102,6 +132,11 @@ footer .down .wrapper{
 }
 footer .name {
   width: 300px;
+}
+footer .menu ul li a:hover{
+  text-decoration: none;
+  transform: scale(1.05);
+  color: white;
 }
 footer .info__phone{
   width: 100%;
