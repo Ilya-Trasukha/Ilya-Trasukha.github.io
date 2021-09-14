@@ -1,35 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
-  font-size:16px;
+body {
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
-.wrapper{
+
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
-header{
+
+header {
   width: 100%;
-  color:white;
-  }
-header a{
-  color:white;
+  color: white;
 }
-header a:hover{
-  color:grey;
+
+header a {
+  color: white;
 }
-header .top .wrapper{
+
+header a:hover {
+  color: grey;
+}
+
+header .top .wrapper {
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:black;
+  background-color: black;
 }
-header .info__phone{
+
+header .info__phone {
   font-size: 14px;
 }
-input{
-  width: 600px;
+
+input {
+  width: 500px;
+  min-width: 250px;
   background-color: rgb(189, 189, 189);
   border-radius: 4px;
   padding: 4px;
@@ -37,38 +47,58 @@ input{
   outline: none;
   font-size: 14px;
 }
-.menu{
+
+.menu {
   width: 100%;
 }
-.menu ul{
+
+.menu ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-.menu ul li{
+
+.menu ul li {
   margin-left: 50px;
 }
-.menu ul li:first-child{
+
+.menu ul li:first-child {
   margin-left: 0px;
 }
-.menu ul li a{
-   text-decoration: none;
-   color: black;
-   display: block;
-   transition: 0.2s ease-in all;
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.2s ease-in all;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
   text-decoration: none;
   transform: scale(1.05);
   color: grey;
 }
 
+.main {
+  display: flex;
+}
+
+.main__left {
+  width: 30%;
+  padding: 15px;
+}
+
+.main__right {
+  width: 70%;
+  padding: 15px;
+}
+
 aside ul {
   list-style: none;
   padding-left: 5px;
-  width: 250px;
+  margin: 0;
   border: 1px solid #707070;
   background-color: white;
 }
@@ -82,15 +112,17 @@ aside a:hover {
   background-color: rgb(230, 223, 223);
 }
 
-aside .chapter{
+aside .chapter {
   color: white;
   background-color: black;
 }
+
 aside ul li a {
   text-decoration: none;
   display: block;
   transition: 0.3s ease-in all;
   color: black;
+  padding-left: 5px;
 }
 
 aside ul li a:hover {
@@ -115,35 +147,146 @@ aside ul ul li {
   background-color: rgb(230, 223, 223);
 }
 
-footer{
+.push {
+  margin-top: 30px;
+  display: flex;
+  padding: 15px;
+  border: 1px solid black;
+
+}
+
+.push.active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.push__icon {
+  width: 20%;
+}
+
+.push_text {
+  width: 80%;
+}
+
+.push__text-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.push__text-decripsition {
+  font-weight: 400;
+}
+
+.slider {
+  border: 1px solid black;
+  min-height: 200px;
+}
+
+.main__right-title {
+  text-align: center;
+  margin-top: 30px;
+ 
+}
+
+.card__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 2px solid grey;
+  padding: 15px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card__img {
+  width: 160px;
+  height: 160px;
+  background-color: black;
+  /**position:relative;**/
+}
+/**.card__img:before{
+  content:'';
   width: 100%;
   position: absolute;
+  heigth:100%;
+  top:0;
+  left:0;
+  backgroundcolor;
+}**/
+.card__title {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.crad__prise {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card__btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height:80px;
+  position: absolute;
   bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.card__btn div{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__btn div:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+.card__btn div:nth-child(2) {
+  background-color: grey;
+}
+
+footer {
+  width: 100%;
   color: white;
   margin: 10px;
 }
-footer a{
+
+footer a {
   color: white;
 }
-footer .name a:hover{
-  color:black;
+
+footer .name a:hover {
+  color: black;
 }
-footer .down .wrapper{
+
+footer .down .wrapper {
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:grey;
+  background-color: grey;
 }
+
 footer .name {
   width: 300px;
 }
-footer .menu ul li a:hover{
+
+footer .menu ul li a:hover {
   text-decoration: none;
   transform: scale(1.05);
   color: white;
 }
-footer .info__phone{
+
+footer .info__phone {
   width: 100%;
   background-color: black;
   padding: 15px;
