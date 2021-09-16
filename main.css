@@ -37,7 +37,7 @@ header .info__phone {
   font-size: 14px;
 }
 
-input {
+.top_inp {
   width: 500px;
   min-width: 250px;
   background-color: rgb(189, 189, 189);
@@ -81,6 +81,24 @@ input {
   color: grey;
 }
 
+.btn{
+  border: 1px solid black;
+  background-color:#adadad;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-width: 175px;
+}
+.btn-darc{
+  background-color:black;
+  color: white;
+}
+.btn-white{
+  background-color:white;
+  color: black;
+}
 .main {
   display: flex;
 }
@@ -191,6 +209,7 @@ aside ul ul li {
 .card__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -201,6 +220,7 @@ aside ul ul li {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 15px;
 }
 
 .card__img {
@@ -252,6 +272,97 @@ aside ul ul li {
 
 .card__btn div:nth-child(2) {
   background-color: grey;
+}
+
+.product__info{
+  display: flex;
+}
+.product__description{
+  width:50%;
+  padding: 15px;
+}
+.product__description-title{
+  font-size:22px;
+  line-height: 25px;
+}
+.product__description-info{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top:15px;
+}
+.product__description-prise{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.product__description-sail{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+.product__description-cards{
+  display: flex;
+  margin-top: 15px;
+}
+.product__description-cards div{
+  border: 1px solid gray;
+  margin-right: 15px;
+  padding:5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.product__description-cards .visa{
+  color: orange;
+}
+.product__description-cards .master{
+  color: red;
+}
+
+.product__description-cartBtn{
+  margin-top: 15px;
+  display: flex;
+}
+.product__description-cartBtn .caunt{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.product__description-cartBtn .caunt input{
+  max-width: 95px;
+}
+.product__description-btn{
+  margin-top: 15px;
+}
+
+.product__slider{
+  width:50%;
+}
+.product__slider-preview{
+  max-height: 316px;
+  min-height:200px;
+  border: 1px solid black;
+}
+.product__slider-list{
+  display:flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  overflow-x: auto;
+  width: 100%;
+}
+.slider-item{
+  border: 1px solid black;
+  width: 60px;
+  height: 41px;
+}
+
+.product__review-btn{
+  display: flex;
 }
 
 footer {
