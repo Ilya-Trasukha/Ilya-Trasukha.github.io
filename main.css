@@ -113,6 +113,21 @@ header .info__phone {
   padding: 15px;
 }
 
+.sorting{
+  display:flex;
+  border-bottom: 1px solid gray;
+}
+
+.sorting__choice{
+  display: flex;
+  float: right;
+}
+.sorting__choice> input[type="radio"]:checked{
+  
+
+}
+
+
 aside ul {
   list-style: none;
   padding-left: 5px;
