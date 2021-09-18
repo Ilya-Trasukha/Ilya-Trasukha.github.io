@@ -5,13 +5,234 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Продукты</title>
+  <title>Категории</title>
   <meta name="description" content="Интернет магазин техники Apple">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+  <header>
+    <div class="top">
+      <div class="wrapper">
+        <div>
+          <span><a href="index.html">Айфоносервис | Техника Apple</a></span>
+        </div>
+        <div>
+          <input class="top_inp" type="text" name="term" placeholder="Поиск по сайту...">
+        </div>
+        <div class="info">
+          <div class="info__acaunt">
+            <span>Мой аккаунт</span>
+          </div>
+          <div class="info__phone">
+            <a href="tel: +375 (33) 634-55-47" title="Телефон">+375 (33) 634-55-47</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="menu wrapper">
+      <ul>
+        <li><a href="product.html">Продукты</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Ремонт</a></li>
+        <li><a href="#">Скидки</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main wrapper">
+    <div class="main__left">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#" class="chapter">Apple iPhone 6s</a>
+            <ul>
+              <li><a href="#">16Gb</a></li>
+              <li><a href="#">64Gb</a></li>
+              <li><a href="#">128Gb</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Apple iPhone 6s Plus</a></li>
+          <li><a href="#">Apple iPhone 6</a></li>
+          <li><a href="#">Apple iPhone 6 Plus</a></li>
+          <li><a href="#">Apple iPhone 5s</a></li>
+          <li><a href="#">Apple Watch</a></li>
+          <li><a href="#">Скидки</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="main__right">
+      <section class="product">
+        <div class="product__info">
+          <div class="product__description">
+            <div class="product__description-title">iPhone 6s 128Gb Gold<br> (Lorem, ipsum dolor.)</div>
+            <div class="product__description-info">
+              <span>Модель:iPhone 6s</span>
+              <span>Наличие: Есть в наличии</span>
+            </div>
+            <div class="product__description-prise">64999 руб.</div>
+            <div class="product__description-sail">
+              <span>66290 руб.</span>
+              <span>При оплате по картам:</span>
+            </div>
+            <div class="product__description-cards">
+              <div class="master">Master Card</div>
+              <div class="visa">Visa</div>
+            </div>
+            <div class="product__description-cartBtn">
+              <div class="btn btn-darc">
+                <span>Добавить в корзину</span>
+              </div>
+              <div class="caunt">
+                <span>Количество</span>
+                <input type="number" name="count" value="1">
+              </div>
+            </div>
+            <div class="product__description-btn">
+              <div class="btn">Купить в кредит</div>
+            </div>
+          </div>
+
+          <div class="product__slider">
+            <div class="product__slider-preview"></div>
+            <div class="product__slider-list">
+              <div class="slider-item">1</div>
+              <div class="slider-item">2</div>
+              <div class="slider-item">3</div>
+              <div class="slider-item">4</div>
+              <div class="slider-item">5</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__review">
+          <div class="product__review-stars">
+            <div class="stars">
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+            <span>0 отзывов / Написать отзыв</span>
+          </div>
+
+          <div class="product__review-tabs">
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label class="product__review-label" for="tab-btn-1">Характеристики</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label class="product__review-label" for="tab-btn-2">Описание</label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label class="product__review-label" for="tab-btn-3">Отзыв</label>
+
+            <div id="content-1">
+              <div class="tab-item active">
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>iPhone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Гарантия</th>
+                      <th>1 год от официального сервис центра Apple</th>
+                    </tr>
+                    <tr>
+                      <th>Объём памяти</th>
+                      <th>128Gb</th>
+                    </tr>
+                    <tr>
+                      <th>Цвет</th>
+                      <th>Gold</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="content-2">iPhone 6s и iPhone 6s Plus основаны на процессоре Apple A9 c сопроцессором M9,
+              отвечающим за геопозицию и гироскоп. Объём оперативной памяти составляет 2 ГБ. В отличие от своего
+              предшественника, смартфоны получили экран с поддержкой технологии распознавания силы нажатия 3D Touch.
+            </div>
+            <div id="content-3">Идеальное устройство для использования. Очень долговечный, высокое качество сборки,
+              чёткое изображение при съёмке.
+              Достоинства: Камера, батарея, долговечность
+              Недостатки: Цена
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="recommed__title">Рекомендуем</h2>
+      <div class="card__list">
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__title">Iphone 6s 128 Gold</div>
+          <div class="card__prise">64990 руб.</div>
+          <div class="card__btn">
+            <div><span>Добавить в корзину</span></div>
+            <div><span>Купить в 1 клик<span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__title">Iphone 6s 128 Gold</div>
+          <div class="card__prise">64990 руб.</div>
+          <div class="card__btn">
+            <div><span>Добавить в корзину</span></div>
+            <div><span>Купить в 1 клик<span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__title">Iphone 6s 128 Gold</div>
+          <div class="card__prise">64990 руб.</div>
+          <div class="card__btn">
+            <div><span>Добавить в корзину</span></div>
+            <div><span>Купить в 1 клик<span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="down">
+      <div class="wrapper">
+        <div class="name">
+          <span><a href="index.html">Айфоносервис | Техника Apple</a></span>
+        </div>
+        <nav class="menu wrapper">
+          <ul>
+            <li><a href="product.html">Продукты</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Ремонт</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="info wrapper">
+      <div class="info__phone">
+        <a href="tel: +375 (33) 634-55-47" title="Телефон">+375 (33) 634-55-47</a><br>
+        <a href="tel: +375 (33) 634-55-47" title="Телефон">Заказать звонок</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

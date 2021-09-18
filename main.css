@@ -95,9 +95,9 @@ header .info__phone {
   background-color:black;
   color: white;
 }
-.btn-white{
-  background-color:white;
-  color: black;
+.btn:hover{
+  background-color: #575757;
+  color: #d6d6d6;
 }
 .main {
   display: flex;
@@ -360,10 +360,187 @@ aside ul ul li {
   width: 60px;
   height: 41px;
 }
+.product__review-stars{
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+.stars{
+  overflow: hidden;
+  margin-left: 0px;
+}
+.stars:not(:checked) >  input{
+  display: none;
+}
+.stars:not(:checked) >  label{
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color:black;
+  text-shadow: 1px 1px rgb(161, 161, 161);
+}
+
+.stars:not(:checked)>label:before {
+  content: '★';
+}
+
+.stars>input:checked~label {
+  color: yellow;
+  text-shadow: 1px 1px rgb(252, 4, 4);
+}
+
+.stars:not(:checked)>label:hover,
+.stars:not(:checked)>label:hover~label {
+  color: yellow;
+}
+
+.stars>input:checked+label:hover,
+.stars>input:checked+label:hover~label,
+.stars>input:checked~label:hover,
+.stars>input:checked~label:hover~label,
+.stars>label:hover~input:checked~label {
+  color: yellow;
+  text-shadow: 1px 1px rgb(252, 4, 4);
+}
+
+.stars>label:active {
+  position: relative;
+}
 
 .product__review-btn{
   display: flex;
+  margin-top: 15px;
 }
+.tab-item thead {
+  background: rgb(211, 211, 211);
+}
+.tab-item table {
+  color: black;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-weight: 400;
+}
+.tab-item td {
+  padding: 10px 45px;
+  border: 1px solid black;
+  min-width: 200px;
+}
+
+.tab-item th {
+  padding: 10px 45px;
+  border: 1px solid black;
+}
+
+.product__review-tabs{
+  font-size: 0px;
+}
+.product__review-tabs>input[type="radio"]{
+  display: none;
+}
+.product__review-tabs>div{
+  display: none;
+  border: none;
+  padding: none;
+  font-size: 16px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.product__review-tabs>label{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border: 1px solid black;
+  padding: 10px 30px;
+  font-size: 16px;
+  width: 188.7px;
+  transition: color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+.product__review-tabs>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.product__review-tabs>input[type="radio"]:checked+label {
+  background-color: rgb(201, 199, 199);
+  border-bottom: 1px solid black;
+}
+
+.product__review-tabs>input[type="radio"]:checked+label:hover {
+  background-color: #575757;
+  color: #d6d6d6;
+}
+
+.product__review-tabs>label:not(:first-of-type):hover {
+  background-color: #575757;
+  color: #d6d6d6;
+}
+
+.recommed__title{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contacts{
+  padding: 15px;
+}
+.contacts__title-head{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.contacts__address table{
+  width: 100%;
+  background: transparent;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+.contacts__map iframe{
+  display: flex;
+  justify-content: center;
+  margin:30px auto;
+  width: 100%;
+  max-height: 300px;
+}
+.contacts__input input {
+  display: block;
+  width: 70%;
+  margin: 15px;
+}
+
+.contacts__input label{
+  float: left;
+  width: 30%;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.contacts__title-back {
+  border-bottom: 1px solid black;
+}
+
+input.btn{
+  width: 300px;
+}
+
+.contacts__inp-submit{
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 footer {
   width: 100%;
