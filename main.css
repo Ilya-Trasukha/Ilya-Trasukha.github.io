@@ -33,8 +33,16 @@ header .top .wrapper {
   background-color: black;
 }
 
+header .info{
+  display: flex;
+  align-items: center;
+}
+header .info__acaunt{
+  padding-left: 15px;
+}
 header .info__phone {
   font-size: 14px;
+  padding-left: 15px;
 }
 
 .top_inp {
@@ -52,7 +60,7 @@ header .info__phone {
   width: 100%;
 }
 
-.menu ul {
+header .menu ul {
   list-style: none;
   display: flex;
   margin: 0;
@@ -79,6 +87,9 @@ header .info__phone {
   text-decoration: none;
   transform: scale(1.05);
   color: grey;
+}
+header .menu{
+  display: flex;
 }
 
 .btn{
@@ -115,18 +126,19 @@ header .info__phone {
 
 .sorting{
   display:flex;
+  justify-content: space-between;
   border-bottom: 1px solid gray;
+  padding-bottom: 15px;
 }
 
 .sorting__choice{
   display: flex;
-  float: right;
-}
-.sorting__choice> input[type="radio"]:checked{
+  align-items: flex-end;
   
-
 }
-
+.sorting__select{
+  margin-left: 15px;
+}
 
 aside ul {
   list-style: none;
@@ -581,6 +593,18 @@ footer .down .wrapper {
 
 footer .name {
   width: 300px;
+}
+footer .menu{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+footer .menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 footer .menu ul li a:hover {
