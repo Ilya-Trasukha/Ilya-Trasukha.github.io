@@ -292,7 +292,7 @@ aside ul ul li {
   line-height: 20px;
 }
 
-.crad__prise {
+.card__prise {
   font-size: 16px;
   line-height: 18px;
 }
@@ -641,4 +641,51 @@ footer .info__phone {
   padding: 15px;
   font-size: 14px;
   text-align: center;
+}
+/*адаптив*/
+@media (max-width: 1200px) {
+  .wrapper{
+    padding-left:15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .header__top{
+    flex-wrap: wrap;
+  }
+  .header__top-logo{
+    order:0;
+  }
+  .header__search{
+    order:2;
+    margin-top:15px;
+  }
+  .header__top-info{
+    order: 1;
+  }
+  .header__bottom{
+    flex-wrap: wrap;
+  }
+  .header__bottom nav{
+    order: 1;
+    margin-top: 15px;
+  }
+  .header__cart{
+    margin-top: 15px;
+    width:100%;
+    order: 0;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 400px){
+  .header__bottom-menu{
+    flex-direction: column;
+  }
+  .header__bottom-menu li a{
+    display: block;
+    padding:5px;
+  }
+  .header__bottom-menu li:first-child a {
+    padding-left:5px;
+  }
 }
