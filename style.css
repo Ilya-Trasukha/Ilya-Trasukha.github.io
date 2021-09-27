@@ -544,18 +544,34 @@ footer {
   .header__bottom-menu a{
     padding: 5px;
   }
-  .footer__top{
+  .footer__top-menu{
     font-size: 13px;
     margin: 0px;
     padding: 0px;
-  }
-  .footer__top-menu ul li a{
-    padding: 5px;
   }
   .slider {
     min-height: 250px;
   }
   .slider__text span{
     font-size: 24px;
+  }
+}
+@media (max-width: 350px){
+  .header__bottom-menu{
+    font-size: 10px;
+  }
+  .footer__top-menu ul{
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer__top-menu{
+    font-size: 10px;
+  }
+  .footer__top-logo{
+    font-size: 11px;
+  }
+  .footer__social a {
+    font-size: 10px;
+    margin: 5px;
   }
 }
