@@ -500,6 +500,7 @@ footer {
     .footer__top{
       flex-wrap: wrap;
       flex-direction: column;
+      padding: 0px;
     }
     .footer__social{
       border: none;
