@@ -544,11 +544,13 @@ footer {
   .header__bottom-menu a{
     padding: 5px;
   }
-  .footer__top-menu{
+  .footer__top{
     font-size: 13px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer__top-menu ul li a{
+    padding: 5px;
   }
   .slider {
     min-height: 250px;
