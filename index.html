@@ -5,31 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TARLA</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
   
   <header class="header wrapper">
-    <div class="header__logo">
-      <img src="images/logo.svg" alt="TARLA">
+    <div class="header__nav">
+      <div class="header__nav-logo"><a href="index.html">
+          <img src="images/logo.svg" alt="tarla"></a>
+      </div>
+      <nav class="header__nav-menu">
+        <ul>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">OUR STORY</a></li>
+          <li><a href="#">WHO IS TARLA?</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__menu">
-      <ul>
-        <li><a href="#">SHOP</a></li>
-        <li><a href="#">OUR STORY</a></li>
-        <li><a href="#">WHO IS TARLA?</a></li>
-      </ul>
-    </nav>
     <div class="header__cart">
-      <div class="header__card-user">
-        <span>Log in</span>
+      <div class="header__cart-user">
+        <a href="#">
+          <img src="images/icons/user.svg" alt="user">
+          <span>Log in</span>
+        </a>
       </div>
-      <div class="header_card_cart">
-        <span>Cart</span>
+      <div class="header__cart-cart">
+        <a href="#">
+          <img src="images/icons/cart.svg" alt="cart">
+          <span>Cart</span>
+        </a>
       </div>
     </div>
-    
   </header>
 </body>
 </html>
