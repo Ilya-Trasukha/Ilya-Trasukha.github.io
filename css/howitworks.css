@@ -1,0 +1,32 @@
+.howitworks {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.howitworks__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.howitworks__item {
+  display: flex;
+  flex: 200px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.howitworks__item-title {
+  margin-top: 15px;
+  font-size: 30px;
+  line-height: 35px;
+  display: block;
+}
+
+.howitworks__button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
