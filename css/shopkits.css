@@ -1,0 +1,66 @@
+.shopkits{
+    width: 100%;
+    padding:15px;
+    border-top: 1px solid white;
+}
+.shopkits__title{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shopkits__kitslist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+.shopkits__card{
+    max-width: 400px;
+    padding-top: 15px;
+}
+.shopkits__kits-image{
+  position: relative;
+}
+.shopkits__kits-image-text{
+  position: absolute;
+  top: 16px;
+  left: 29px;
+  font-weight: 700;
+  width: 81px;
+  height: 73px;
+  border: 2px solid var(--text);
+  border-radius: 50%;
+  line-height: 2em;
+  text-align: center;
+}
+.shopkits__kits-name{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+@media (max-width: 1400px) {
+    .shopkits__card {
+      flex: 1 1 300px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .shopkits__kits-name{
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .shopkits__kitslist {
+      display: flex;
+      padding-bottom: 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .shopkits__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
