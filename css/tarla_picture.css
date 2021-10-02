@@ -1,0 +1,10 @@
+.tarla__picture {
+    width: 100%;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .tarla__picture {
+        padding: 0px;
+    }
+}
