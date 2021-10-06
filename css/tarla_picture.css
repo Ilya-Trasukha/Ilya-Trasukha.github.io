@@ -1,6 +1,6 @@
-.tarla__picture {
-    width: 100%;
-    padding: 15px;
+.tarla__picture img {
+    min-width: 100%;
+    padding: 25px 0px;
 }
 
 @media (max-width: 768px) {

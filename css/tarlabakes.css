@@ -1,0 +1,26 @@
+.tarlabakes{
+    background: white;
+}
+.bakes{
+    padding: 45px 0;
+}
+.bakes__title{
+    text-align: center;
+    font-size: 43px;
+    line-height: 60px;
+    padding: 15px;
+    font-family: var(--font-roboto);
+}
+.bakes__cardlist{
+    display: flex;
+    justify-content: center;
+}
+.bakes__cardlist img {
+    padding: 10px;
+    overflow: hidden;
+}
+@media (max-width: 992px) {
+    .tarlabakes {
+        display: none;
+    }
+}
