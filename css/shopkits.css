@@ -1,7 +1,6 @@
 .shopkits{
     width: 100%;
     padding:15px;
-    border-top: 1px solid white;
 }
 .shopkits__title{
     padding: 20px;
@@ -13,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 .shopkits__card{
     max-width: 400px;
@@ -37,6 +36,10 @@
 .shopkits__kits-name{
     text-transform: uppercase;
     font-size: 27px;
+}
+.shopkits__kits-price{
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 @media (max-width: 1400px) {
     .shopkits__card {
