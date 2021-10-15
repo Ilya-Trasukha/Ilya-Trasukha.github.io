@@ -1,0 +1,45 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 
+        top: 50px
+        bottom: 50px
+    &__nav-menu ul
+        display: flex
+        list-style: none
+        padding: 0
+    &__nav-menu ul li
+        text-align: center
+        padding-left: 50px
+    &__nav-menu ul li a
+        text-decoration: none
+        color: $maincolor
+    &__accaunt
+        display: flex
+    &__accaunt a
+        text-decoration: none
+        color: $maincolor
+    &__accaunt-user i
+        font-size: 18px
+        padding-right: 10px
+    &__accaunt-search i
+        font-size: 18px
+        padding-left: 10px
+    &__accaunt-search span
+        padding-left: 10px
+
+@media  (max-width: 768px)
+    .header
+        flex-direction: column
+
+@media  (max-width: 576px)
+    .header
+        font-size: 14px
+        padding: 
+            top: 10px
+            bottom: 10px
+        
+    
+    
+        
