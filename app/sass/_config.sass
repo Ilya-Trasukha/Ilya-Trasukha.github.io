@@ -1,0 +1,82 @@
+/// USER VARIABLES SECTION
+
+$butcolor: #FFFFFF
+$accent: #FF715B // Accent Color
+$fontsize: 18px // Body Font Size
+$fontsize2: 16px
+$maincolor: #2C2C2C // Text Color
+$seccolor: #A79997
+$border-color: #F5EBE9
+$mainfont: 'Noto Serif', sans-serif // User Font Family
+$secfont: 'PT Sans', sans-serif
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family 
+
+
+$xxl: 1320px
+$xl: 1140px
+$lg: 960px
+$md: 720px
+$sm: 540px
+
+@import reset
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Noto Serif', normal, 400, '../fonts/NotoSerif-Regular.ttf')
+@include font('Noto Serif', normal, 700, '../fonts/NotoSerif-Bold.ttf')
+
+
+@include font('PT Sans', normal, 400, '../fonts/PTSans-Regular.ttf')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $mainfont
+	font-size: $fontsize
+	color: $maincolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+.wrapper
+  max-width: $xxl
+  margin: 0 auto
+
+@media (max-width: 1400px)
+  .wrapper
+    max-width: $xl
+
+@media (max-width: 1200px)
+  .wrapper
+    max-width: $lg
+
+@media (max-width: 992px)
+  .wrapper
+    max-width: $md
+
+@media (max-width: 768px)
+  .wrapper
+    max-width: $sm
+
+@media (max-width: 576px)
+  .wrapper
+    max-width: 100%

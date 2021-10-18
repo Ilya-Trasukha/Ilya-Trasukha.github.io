@@ -1,0 +1,24 @@
+.button
+    display: inline-block
+    background-color: $accent
+    color: $butcolor
+    padding: 15px 36px
+    text-align: center
+    transition: all .1s ease
+    cursor: pointer
+    &:hover
+        background-color: #00f2fa
+        & span
+            border-bottom: 1px dashed #f01009
+
+@media (max-width: 768px)
+  .button
+      padding: 5px
+      max-width: 150px
+      font-size: 14px  
+
+@media (max-width: 576px)
+  .button
+      padding: 0px
+      font-size: 12px
+    
