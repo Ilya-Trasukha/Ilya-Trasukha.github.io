@@ -5,48 +5,35 @@
     padding: 
         top: 50px
         bottom: 50px
-    &__nav-menu ul
-        display: flex
+    a
+        text-decoration: none
+        color: $maincolor
+        transition: all 0.3s ease-out
+        &:hover
+            color: $accent
+    li
+        display: inline
         list-style: none
-        padding: 0
-    &__nav-menu ul li
-        text-align: center
-        padding-left: 50px
-    &__nav-menu ul li a
-        text-decoration: none
-        color: $maincolor
-    &__accaunt
+        padding: 15px
+    &__account
         display: flex
-    &__accaunt a
-        text-decoration: none
-        color: $maincolor
-    &__accaunt-user i
-        font-size: 18px
-        padding-right: 10px
-    &__accaunt-search i
-        font-size: 18px
-        padding-left: 10px
-    &__accaunt-search span
-        padding-left: 10px
+        align-items: center
+        span
+            padding: 15px
+            padding-left: 10px
+        &-src
+            width: 30px
+            padding-left: 10px
+            border-left: 1px solid gray
 
-@media  (max-width: 992px)
+@media (max-width: 992px)
     .header
-        &__accaunt-user
-            padding-left: 25px
+        li
+            padding: 5px
 
-@media  (max-width: 768px)
+@media (max-width: 768px)
     .header
         flex-direction: column
-        &__nav-menu ul li
-            text-align: center
-            padding-left: 25px
-
-@media  (max-width: 576px)
-    .header
-        font-size: 14px
-        padding: 
-            top: 10px
-            bottom: 10px
         
     
     
