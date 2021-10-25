@@ -1,18 +1,20 @@
 .banner
     position: relative
     &__slider
-        position: relative
-        &-img
-            img
-            display: none
-            &.active
-                display: block
+        position: relative 
         &-info
             font-size: 68px
             bottom: 55%
             left: 10%
             position: absolute
-        
+            span
+            display: none
+            &.active
+                display: block
+        &-button
+            position: absolute
+            bottom: 45%
+            left: 10%
     &__count
         position: absolute
         width: 28%
@@ -36,12 +38,10 @@
             background-color: #F5EBE9
         &-number
             font-size: 30px
-
 .search__box
     width: 70%
     height: 20%
     background-color: #fff
-    color: $seccolor
     display: flex
     justify-content: space-around
     align-items: center
@@ -53,6 +53,7 @@
     font-family: $secfont
     font-size: $fontsize2
     color: $seccolor
+    
     input
         width: 170px
         height: 27px
@@ -83,10 +84,16 @@
             width: 100px
         input
             width: 100px
+    .banner__slider-button
+        bottom: 35%
+        left: 10%
 
 @media (max-width: 768px)
     .banner__slider-info
         font-size: 2em
+    .banner__slider-button
+        bottom: 25%
+        left: 10%
     .search__box
         width: 400px
         left: 25%

@@ -1,0 +1,237 @@
+.about
+    width: 100%
+    padding-top: 200px
+    display: flex
+    position: relative
+    &__ellipse
+        position: absolute
+        top: 450px
+        left: -40px
+    &__yellow
+        position: absolute
+        top: 120px
+        left: 480px
+        display: block
+        border-radius: 12px
+        &:hover
+            box-shadow: 0px 0px 30px 5px #50520d33
+    &__pattern
+        position: absolute
+        bottom: -80px
+        left: -20px
+    &__left
+        width: 50%
+    &__lighthouse
+        width: 100%
+        padding-left: 60px
+        position: relative
+        &:hover
+            div
+                animation: lighthouse 3s  linear infinite
+                filter: blur(4px)
+                width: 15px
+                height: 15px
+        &-light
+            width: 10px
+            height: 10px
+            background-color: white
+            position: absolute
+            z-index: 10
+            filter: blur(4px)
+            top: 140px
+            left: 200px
+            border-radius: 50px
+        img
+            max-height: 600px
+            &:hover
+                box-shadow: 0px 0px 30px 5px #474af8
+    &__right
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+    &__head
+        font-size: 48px
+        font-weight: bold
+    &__info
+        &-line
+            width: 90%
+            height: 2px
+            background-color: #F1E0DD
+            margin-left: 50px
+        &-one
+            i
+                float: left
+                margin-right: 20px
+                font-size: 16px
+                padding: 10px
+                color: white
+                background-color: $accent
+                border-radius: 7px
+                &:hover
+                    box-shadow: 0px 0px 30px 5px $accent
+                    transition: 0.5s
+            &-title
+                font-size: 24px
+                font-weight: 600
+            &-desc
+                padding-left: 55px
+                font-size: $fontsize
+                color: $seccolor
+        &-two
+            i
+                margin-right: 20px
+                font-size: 16px
+                padding: 10px
+                color: #65CE54
+                background-color: #EDFAE3
+                border-radius: 7px
+                &:hover
+                    box-shadow: 0px 0px 30px 5px #65CE54
+                    transition: 0.5s
+            font-size: 24px
+            font-weight: 600
+        &-three
+            i
+                margin-right: 20px
+                font-size: 16px
+                padding: 10px
+                color: #FFC01E
+                background-color: #FFF8E3
+                border-radius: 7px
+                &:hover
+                    box-shadow: 0px 0px 30px 5px #FFC01E
+                    transition: 0.5s
+            font-size: 24px
+            font-weight: 600
+
+@keyframes lighthouse
+    0%
+        transform: scale(0)
+    10%
+        transform: scale(2)
+    20%
+        transform: scale(4)
+    30%
+        transform: scale(6)
+    40%
+        transform: scale(8)
+    50%
+        transform: scale(10)
+    60%
+        transform: scale(8)
+    70%
+        transform: scale(6)
+    80%
+        transform: scale(4)
+    90%
+        transform: scale(2)
+    100%
+        transform: scale(0)
+            
+@media (max-width: 1200px)
+    .about
+        &__lighthouse
+            &-light
+                left: 180px
+                top: 130px
+        &__yellow
+            left: 400px
+        &__right
+            position: relative
+            padding-left: 15px
+        &__head
+            font-size: 2em
+        &__info
+            &-one
+                &-title
+                    font-size: 20px
+                &-desc
+                    font-size: 15px
+            &-two
+                font-size: 20px
+            &-three
+                font-size: 20px
+
+@media (max-width: 992px)
+    .about
+        &__lighthouse
+            &-light
+                left: 145px
+                top: 90px
+        &__yellow
+            left: 300px
+            top: 150px
+            img
+                width: 100px
+        &__ellipse
+            top: 350px
+            left: -10px
+            img
+                width: 40px
+        &__pattern
+            bottom: -40px
+            left: 0
+            img
+                width: 120px
+        &__head
+            font-size: 2em
+        &__info
+            &-one
+                &-title
+                    font-size: 16px
+                &-desc
+                    font-size: 14px
+            &-two
+                font-size: 16px
+            &-three
+                font-size: 16px
+
+@media (max-width: 768px)
+    .about
+        padding-top: 30px
+        padding-left: 30px
+        width: 100%
+        display: flex
+        flex-direction: column
+        &__left
+            width: 100%
+        &__right
+            width: 100%
+            padding: 15px
+        &__lighthouse
+            padding: 0
+            &-light
+                left: 145px
+                top: 140px
+        &__yellow
+            display: none
+        &__ellipse
+            display: none
+        &__pattern
+            display: none
+        &__head
+            font-size: 24px
+        &__info
+            &-line
+                margin: 5px
+                width: 100%
+            &-one
+                &-title
+                    font-size: 16px
+                    padding: 5px
+                &-desc
+                    font-size: 14px
+            &-two
+                font-size: 16px
+            &-three
+                font-size: 16px
+
+@media (max-width: 576px)
+    .aboutus
+        padding-left: 0
+        width: 100%
+        img
+            width: 100%
+        &__lighthouse-light
+            display: none

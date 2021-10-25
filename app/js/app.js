@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	const images = [...document.querySelectorAll('.banner__slider-img')]
+	const images = [...document.querySelectorAll('.banner__slider-info')]
 	const left = document.querySelector('#left');
 	const right = document.querySelector('#right');
 	const number = document.querySelector('.banner__count-number');
