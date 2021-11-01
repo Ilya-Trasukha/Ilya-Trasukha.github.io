@@ -1,0 +1,179 @@
+.choose
+    padding: 50px
+    padding-top: 150px
+    &__title
+        padding: 20px
+        text-align: center
+        font-size: 40px
+        font-weight: bold
+    &__cardlist
+        display: flex
+    &__card
+        margin: 15px
+        &-triangle
+            width: 140px
+            padding-bottom: 15px
+            float: right
+        &-polycircle
+            padding-bottom: 15px
+            img
+                width: 140px
+                height: 140px
+        &-btn
+            position: relative
+            top: 7%
+            left: 21%
+        &-box
+            background-color: #fff
+            max-width: 80%
+            display: flex
+            justify-content: space-around
+            align-items: center
+            box-shadow: 0px 10px 25px rgba(215, 190, 190, 0.2)
+            position: relative
+            bottom: 7%
+            left: 76px
+            &-main
+                padding: 10px 15px
+                padding-right: 0
+            &-title
+                font-size: 18px
+                font-weight: bold
+                padding: 5px 0px
+            &-overview
+                display: flex
+                justify-content: space-between
+                align-items: flex-end
+            &-coast
+                color: $accent
+                font-weight: bold
+                font-size: 16px
+            &-stars
+                padding-left: 10px
+
+                i
+                    font-size: 12px
+                    color: #FFC01E
+                span
+                    color: $seccolor
+                    padding-left: 5px
+            &-plus
+                padding-left: 5px
+                i
+                    background-color: $accent
+                    color: white
+                    padding: 15px
+                    transition: all 0.1s ease-out
+                    &:hover
+                        cursor: pointer
+                        background-color: #afafaf
+                        transform: scale(1.01)
+                        box-shadow: 0px 0px 30px 5px rgba(12, 9, 9, 0.2)
+
+@media (max-width: 1400px)
+    .choose__card-box
+        left: 48px
+        max-width: 85%
+        &-title
+            font-size: 18px
+        &-coast
+            font-size: 16px
+        &-stars
+            padding-left: 5px
+            i
+                font-size: 8px
+            span
+                padding-left: 0 
+        &-main
+            padding-left: 5px
+
+@media (max-width: 1200px)
+    .choose__card
+        margin: 10px
+        &-triangle
+            width: 120px
+        &-polycircle
+            img
+                width: 120px
+                height: 120px
+        &-btn
+            top: 8%
+            left: 12%
+        &-box
+            left: 41px
+            &-title
+                font-size: 16px
+            &-coast
+                font-size: 12px
+            &-stars
+                padding-left: 5px
+                i
+                    font-size: 7px
+                span
+                    font-size: 12px
+            &-main
+                padding-top: 5px
+                padding-bottom: 5px
+            &-plus
+                i
+                    padding: 10px
+
+@media (max-width: 992px)
+    .choose
+        padding-top: 100px
+        &__card
+            margin: 5px
+            &-triangle
+                width: 100px
+            &-quadrant
+                img
+                    width: 100px
+                    height: 100px
+            &-btn
+                top: 8%
+                left: 5%
+            &-box
+                left: 0px
+                max-width: 100%
+                &-title
+                    font-size: 15px
+                    padding: 0
+                &-coast
+                    font-size: 10px
+                &-stars
+                    padding-left: 5px
+                    i
+                        font-size: 7px
+                    span
+                        font-size: 10px
+                &-main
+                    padding-top: 5px
+                    padding-bottom: 5px
+                &-plus
+                    i
+                        padding: 7px
+                        font-size: 12px
+
+@media (max-width: 768px)
+    .choose
+        padding: 0px
+        &__title
+            font-size: 30px
+            padding-bottom: 10px
+        &__card
+            margin: 5px
+            &-triangle
+                display: none
+            &-polycircle
+                display: none
+            &-box
+                &-overview
+                    flex-direction: column
+                    align-items: flex-start
+            &-btn
+                top: -5%
+                left: 7%
+
+@media (max-width: 576px)
+    .choose__card-btn
+        left: 15%

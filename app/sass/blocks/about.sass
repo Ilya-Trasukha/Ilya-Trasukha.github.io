@@ -14,7 +14,9 @@
         display: block
         border-radius: 12px
         &:hover
-            box-shadow: 0px 0px 30px 5px #50520d33
+            cursor: pointer
+            box-shadow: 0px 0px 30px 5px #e70a2f9d
+            transition: 0.5s
     &__pattern
         position: absolute
         bottom: -80px
@@ -25,12 +27,11 @@
         width: 100%
         padding-left: 60px
         position: relative
-        &:hover
-            div
-                animation: lighthouse 3s  linear infinite
-                filter: blur(4px)
-                width: 15px
-                height: 15px
+        div
+            animation: lighthouse 3s  linear infinite
+            filter: blur(4px)
+            width: 15px
+            height: 15px
         &-light
             width: 10px
             height: 10px
@@ -45,6 +46,8 @@
             max-height: 600px
             &:hover
                 box-shadow: 0px 0px 30px 5px #474af8
+                transition: 0.5s
+                cursor: pointer
     &__right
         width: 50%
         display: flex
@@ -71,6 +74,7 @@
                 &:hover
                     box-shadow: 0px 0px 30px 5px $accent
                     transition: 0.5s
+                    cursor: pointer
             &-title
                 font-size: 24px
                 font-weight: 600
@@ -89,6 +93,7 @@
                 &:hover
                     box-shadow: 0px 0px 30px 5px #65CE54
                     transition: 0.5s
+                    cursor: pointer
             font-size: 24px
             font-weight: 600
         &-three
@@ -102,6 +107,7 @@
                 &:hover
                     box-shadow: 0px 0px 30px 5px #FFC01E
                     transition: 0.5s
+                    cursor: pointer
             font-size: 24px
             font-weight: 600
 
