@@ -1,0 +1,63 @@
+.apps
+    position: relative
+    width: 100%
+    margin-top: 200px
+    border-radius: 15px 
+    display: flex
+    align-items: center
+    background: linear-gradient(90deg, #CEFEFE 0%, #DDF181 100%)
+    &__left
+        padding-left: 5%
+        width: 50%
+        &-img
+            display: flex
+            padding-top: 5%
+            & img
+                padding: 10px
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1)
+                    transition: 0.5s
+                    animation: hoverImage 0.8s linear
+                    animation-fill-mode: forwards
+
+        &-title
+            font-size: 35px
+            padding: 10px
+            font-weight: bold
+            font-family: $mainfont
+            padding: 10px
+    &__right
+        width: 50%
+@keyframes hoverImage
+    0%
+        transform: scale(1)
+    25%
+        transform: scale(1.12)
+    50%
+        transform: scale(1.15)
+    75%
+        transform: scale(1.12)
+    100%
+        transform: scale(1)
+@media (max-width: 992px)
+    .apps
+        padding-top: 5%
+        margin-top: 50px
+        flex-direction: column
+        &__left
+            width: 100%
+            &-img
+                justify-content: center
+            &-title
+                font-size: 30px
+                text-align: center
+        &__right
+            padding-top: 10% 
+            width: 100%
+@media (max-width: 576px)
+    .apps
+        &__left
+            &-img
+                align-items: center
+                flex-direction: column

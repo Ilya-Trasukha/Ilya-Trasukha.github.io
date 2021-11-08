@@ -1,0 +1,129 @@
+.footer
+    display: flex
+    width: 100%
+    padding-top: 30px
+    padding-bottom: 30px
+    &__info
+        font-family: $secfont
+        font-weight: bold
+        width: 30%
+        color: $seccolor
+        & span
+            padding-left: 10px
+        & i
+            font-size: 20px
+            padding-right: 5px
+            transform: translate(-1px,3px) 
+        &-logo
+            padding: 10px
+        &-desc
+            padding: 10px
+        &-tell
+            padding: 10px
+        &-email
+            padding: 10px
+        &-site
+            padding: 10px
+    &__links
+        font-family: $secfont
+        font-weight: bold
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 25%
+        color: $seccolor
+        & span
+            color: #000
+            font-size: 20px
+            font-weight: 800
+        & ul
+            padding-left: 15px
+        & li
+            padding-top: 10px
+            list-style: none
+            a
+                text-decoration: none
+                color: $seccolor
+                &:hover
+                    color: $accent
+            &:before
+                content: '\2014\00a0\00a0'       
+    &__support
+        font-family: $secfont
+        font-weight: bold
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 25%
+        color: $seccolor
+        & span
+            color: #000
+            font-size: 20px
+            font-weight: 800
+            transform: translate(-19px,0)
+        & ul
+            padding-left: 15px
+        & li
+            padding-top: 10px
+            list-style: none
+            a
+                text-decoration: none
+                color: $seccolor
+                &:hover
+                    color: $accent
+            &:before
+                content: '\2014\00a0\00a0'
+    &__news
+        display: flex
+        flex-direction: column
+        width: 20%
+        font-family: $secfont
+        font-size: 20px
+        font-weight: 800
+        
+        & input
+            width: 225px
+            height: 40px
+            margin-top: 15px
+            margin-bottom: 15px
+            background-color: #DCDCDC
+            border: none
+        &-knopka
+            display: flex
+            justify-content: center;
+
+.copy
+    font-family: $mainfont
+    color: $seccolor
+    padding-top: 15px
+    padding-bottom: 15px
+    border-top: 1px solid $maincolor
+    text-align: center
+    & .md
+        color: $accent
+@media screen and (max-width: 992px)
+    .footer
+        flex-direction: column   
+        align-items: center
+        &__info
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+        &__links
+            flex-direction: row
+            justify-content: center
+            width: 100%
+            transform: translate(-7%,0)
+        &__support
+            flex-direction: row
+            justify-content: center
+            width: 100%
+        &__news
+            display: flex
+            align-items: center
+            width: 100%
+            & input
+                width: 220px
+            & btn
+                transform: translate(15%, 0) 
